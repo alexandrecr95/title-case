@@ -55,10 +55,6 @@
   </main>
   <script src="js/main.js"></script>
   <script>
-
-    function titleCase(str){
-      return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
-    }
         const mySubmit = document.querySelector("#submit");
         console.log(mySubmit);
 
@@ -66,7 +62,7 @@
           ev.preventDefault();
           const myInput = document.querySelector("#input");
           const myOutput = document.querySelector("#output");
-          myOutput.innerHTML = titleCase(myInput.value);
+          myOutput.innerHTML = myInput.value;
           //alert(myInput.value);
 
         });
